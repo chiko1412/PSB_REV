@@ -32,6 +32,9 @@ st.subheader(':violet[Bagaimana cara mendapatkan data untuk perhitungan kerapata
 st.write('1. Data Hasil perhitungan kerapatan absolut ')
 st.write('2. Nilai viskositas air dalam suhu saat melakukan percobaan(Nilai viskositas dapat di lihat pada menu tabel viskositas air).')
 
+st.subheader(':blue[Rumus Kerapapatan Absolut]')
+rumus = r"\text{Kerapatan absolut} = \frac{\text{Berat wadah isi Sampel} - \text{berat wadah isi air}}{\text{Volume Sampel}}"
+st.latex(rumus)
 
 st.subheader(':blue[Rumus Kerapatan relatif]')
 rumus = r"\text{Kerapatan Relatif} = \frac{\text{Kerapatan Absolut}}{\text{viskositas air}}"
