@@ -25,7 +25,7 @@ st.write('2. Kacang ijo dimasukkan ke dalam gelas ukur sambil diketuk-ketuk samp
 st.write('3. Gelas ukur berisi kacang ijo ditimbang, catat sebagai Wgb. Hitung bobot kacang ijo (Wgb-Wgu) dan catat sebagai W.')
 
 st.subheader(':blue[Rumus Kerapatan Curah]')
-rumus = r"\text{Kerapatan Curah} = \frac{\text{Berat Sampel} - \text{berat wadah kosong}}{\text{Volume Sampel}}"
+rumus = r"\text{Kerapatan Curah} = \frac{\text{Berat wadah isi Sampel} - \text{berat wadah kosong}}{\text{Volume Sampel}}"
 st.latex(rumus)
 
 # Perhitungan kerapatan curah
