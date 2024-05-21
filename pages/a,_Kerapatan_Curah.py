@@ -41,7 +41,7 @@ def main():
     st.subheader('Kalkulator Kerapatan Curah')
     sample_weight_bulk = st.number_input('Bobot Gelas Ukur Isi Sampel (g):', min_value=0.0, format="%.4f", key='bulk_sample_weight')
     berat_wadah_bulk = st.number_input('Bobot Gelas Ukur (g):', min_value=0.0, format="%.4f", key='bulk_berat_wadah')
-    sample_volume_bulk = st.number_input('Volume Gelas Ukur Isi Sampel (mL):', min_value=0.0, format="%.4f", key='bulk_sample_volume')
+    sample_volume_bulk = st.number_input('Volume Gelas Ukur Isi Sampel (mL):', min_value=0.0, format="%.2f", key='bulk_sample_volume')
     if st.button('Hitung Kerapatan Curah'):
         bulk_density = calculate_bulk_density(sample_weight_bulk, berat_wadah_bulk, sample_volume_bulk)
         if bulk_density is not None:
@@ -50,5 +50,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
